@@ -28,3 +28,6 @@ config  # Ignore the config folder
 # IDE settings
 .vscode/
 config/service-account.json
+config/service-account.json
+.output/
+.env
