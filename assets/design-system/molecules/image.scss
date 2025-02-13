@@ -1,0 +1,36 @@
+/* Shared styles for avatar and profile image */
+.avatar,
+.profile-image {
+  border-radius: var(--radius-full);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background-color: var(--background);
+}
+
+.avatar--mini,
+.profile-image--mini {
+  width: var(--avatar-mini, 32px);
+  height: var(--avatar-mini, 32px);
+}
+
+.avatar--small,
+.profile-image--small {
+  width: var(--avatar-small, 40px);
+  height: var(--avatar-small, 40px);
+}
+
+.avatar--medium,
+.profile-image--medium {
+  width: var(--avatar-medium, 48px);
+  height: var(--avatar-medium, 48px);
+}
+
+.avatar--large,
+.profile-image--large {
+  width: var(--avatar-large, 100px);
+  height: var(--avatar-large, 100px);
+}
+

@@ -1,0 +1,27 @@
+/* ============================= */
+/* 🔹 Global Gallery Styles */
+/* ============================= */
+
+/* Style for each gallery grid item */
+.gallery-grid-item {
+  text-align: center;
+  padding: var(--spacing-xxs);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-m);
+}
+
+.gallery-grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-m);
+  object-fit: cover;
+}
+
+/* Image Name */
+.image-name {
+  justify-content: center;
+  display: flex;
+  margin-top: var(--spacing-xxs);
+  font-size: var(--font-size-s);
+  color: var(--text-primary);
+}

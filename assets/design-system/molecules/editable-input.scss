@@ -1,0 +1,33 @@
+/* === assets/design-system/molecules/editable-input.scss === */
+
+.editable-input {
+    width: 100%; /* Default width */
+    max-width: 100%; /* Ensure it fits smaller screens */
+    padding: var(--spacing-s); /* Matches dropdown padding */
+    margin-bottom: var(--spacing-s); /* Aligns spacing consistency */
+    border: 1px solid var(--border);
+    border-radius: var(--radius-s); /* Matches dropdown radius */
+    font-size: var(--font-size-m);
+    color: var(--text-primary);
+    background-color: var(--background-2);
+    box-shadow: var(--shadow-xs); /* Adds subtle shadow for alignment */
+    box-sizing: border-box; /* Ensures padding is included in width */
+  
+    &:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px var(--primary-light); /* Matches focus effect */
+    }
+  
+    &:disabled {
+      background-color: var(--background-strong);
+      color: var(--text-secondary);
+      cursor: not-allowed;
+      opacity: 0.6; /* Consistent disabled styling */
+    }
+  
+    &.fixed-width {
+      width: 600px; /* Fixed width option */
+    }
+  }
+  

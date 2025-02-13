@@ -1,0 +1,172 @@
+/* Breakpoints */
+$breakpoint-mobile-portrait: 375px;
+$breakpoint-mobile-landscape: 812px;
+$breakpoint-tablet-portrait: 768px;
+$breakpoint-tablet-landscape: 1024px;
+$breakpoint-desktop: 1440px;
+
+/* Media Query Mixins */
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile-portrait {
+    @media (max-width: $breakpoint-mobile-portrait) {
+      @content;
+    }
+  } @else if $breakpoint == mobile-landscape {
+    @media (min-width: ($breakpoint-mobile-portrait + 1px)) and (max-width: $breakpoint-mobile-landscape) {
+      @content;
+    }
+  } @else if $breakpoint == tablet-portrait {
+    @media (min-width: $breakpoint-tablet-portrait) and (max-width: ($breakpoint-tablet-landscape - 1px)) {
+      @content;
+    }
+  } @else if $breakpoint == tablet-landscape {
+    @media (min-width: $breakpoint-tablet-landscape) and (max-width: ($breakpoint-desktop - 1px)) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (min-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
+}
+
+/* Effects */
+.backdrop-blur {
+  backdrop-filter: blur(5px);
+}
+
+/* Primitives */
+:root {
+  /* Radius (rounded corners) */
+  --radius-xs: 4px;
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-l: 20px;
+  --radius-xl: 32px;
+  --radius-full: 99px;
+
+  /* Spacing */
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-s: 12px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+
+  /* Font sizes */
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 18px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+
+  /* Font weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Line heights */
+  --line-height-xs: 1.2;
+  --line-height-s: 1.4;
+  --line-height-m: 1.6;
+  --line-height-l: 1.8;
+
+  /* Box Shadows */
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-s: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-m: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-l: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.2);
+
+  /* Logo Sizes */
+  --logo-width-small: 100px;
+  --logo-width-medium: 150px;
+  --logo-width-large: 200px;
+
+  /* Avatar Sizes */
+  --avatar-mini: 24px;
+  --avatar-small: 40px;
+  --avatar-medium: 48px;
+  --avatar-large: 100px;
+
+  /* Layout */
+  --header-height: 60px;
+}
+
+/* Theme Variables */
+:root {
+  /* Light Theme */
+  --tertiary: var(--tertiary-light);
+  --secondary: var(--secondary-light);
+  --primary: var(--primary-light);
+  --background: var(--background-light);
+  --background-2: var(--background-2-light);
+  --background-strong: var(--background-strong-light);
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  --border: var(--border-light);
+  --hover: var(--hover-light);
+  --shadow: var(--grey-light);
+
+  /* Google Button */
+  --google-button-background: var(--google-button-background-light);
+  --google-button-text: var(--google-button-text-light);
+  --google-button-border: var(--google-button-border-light);
+}
+
+/* Dark Theme */
+[data-theme='dark'] {
+  --tertiary: var(--tertiary-dark);
+  --secondary: var(--secondary-dark);
+  --primary: var(--primary-dark);
+  --background: var(--background-dark);
+  --background-2: var(--background-2-dark);
+  --background-strong: var(--background-strong-dark);
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --border: var(--border-dark);
+  --hover: var(--hover-dark);
+  --shadow: var(--grey-dark);
+
+  /* Google Button */
+  --google-button-background: var(--google-button-background-dark);
+  --google-button-text: var(--google-button-text-dark);
+  --google-button-border: var(--google-button-border-dark);
+}
+
+/* System Preference for Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --tertiary: var(--tertiary-dark);
+    --secondary: var(--secondary-dark);
+    --primary: var(--primary-dark);
+    --background: var(--background-dark);
+    --background-2: var(--background-2-dark);
+    --background-strong: var(--background-strong-dark);
+    --text-primary: var(--text-primary-dark);
+    --text-secondary: var(--text-secondary-dark);
+    --border: var(--border-dark);
+    --hover: var(--hover-dark);
+    --shadow: var(--grey-dark);
+
+    /* Google Button */
+    --google-button-background: var(--google-button-background-dark);
+    --google-button-text: var(--google-button-text-dark);
+    --google-button-border: var(--google-button-border-dark);
+  }
+}
+// namespaces
+// --tertiary
+// --secondary
+// --primary
+// --background
+// --background-2
+// --background-strong
+// --text-primary
+// --text-secondary
+// --border
+// --hover
+// --shadow

@@ -1,0 +1,101 @@
+/* === assets/design-system/molecules/dropdown.scss === */
+
+/* Dropdown Container */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s); /* Matches editable input */
+  box-shadow: var(--shadow-md); /* Slightly stronger shadow for hierarchy */
+  overflow-y: auto; /* Enables scrolling inside the dropdown */
+  padding: var(--spacing-s); /* Matches editable input padding */
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 1000; /* Ensures it appears above other elements */
+  max-width: 100%; /* Responsive */
+  box-sizing: border-box;
+  max-height: 300px; /* Prevents the dropdown from exceeding this height */
+  gap: 1px;
+  &.fixed-width {
+    width: 600px; /* Fixed width option */
+  }
+}
+
+/* Dropdown Animation */
+.dropdown-enter-active,
+.dropdown-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-enter-from,
+.dropdown-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* Dropdown Scrollbar Styling (Optional) */
+.dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dropdown::-webkit-scrollbar-track {
+  background: var(--background);
+  border-radius: var(--radius-s);
+}
+
+.dropdown::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+  border-radius: var(--radius-s);
+  border: 2px solid var(--background);
+}
+
+/* Dropdown Item */
+.dropdown-item {
+  padding: var(--spacing-s); /* Matches input padding */
+  color: var(--text-primary);
+  font-size: var(--font-size-m);
+  border-radius: var(--radius-s); /* Matches input radius */
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  margin-top: var(--spacing-xs);
+  background-color: var(--background);
+  width: fit-content;
+}
+
+/* Disabled Dropdown Item */
+.dropdown-item.disabled {
+  color: var(--text-secondary);
+  background-color: var(--background-strong);
+  cursor: not-allowed;
+  opacity: 0.6; /* Matches disabled editable input */
+}
+select {
+  background-color: var(--background);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  padding: var(--spacing-s);
+  font-size: var(--font-size-m);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Optional: If you wrap your select in a container to add a custom arrow */
+.select-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.select-container::after {
+  content: "▼";
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  position: absolute;
+  right: var(--spacing-s);
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}

@@ -1,0 +1,43 @@
+/* ============================= */
+/* 🔹 Shared Upload Styles */
+/* ============================= */
+
+.dropzone {
+  border: 2px dashed var(--border);
+  padding: var(--spacing-m);
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropzone:hover {
+  background-color: var(--background);
+}
+
+/* File Input */
+.file-input {
+  display: none;
+}
+
+/* ============================= */
+/* 🔹 Shared Document Meta Styles */
+/* ============================= */
+.doc-upload-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-s);
+}
+
+.doc-upload-meta label {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-m);
+}
+
+.doc-upload-meta input {
+  padding: var(--spacing-xs);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  font-size: var(--font-size-m);
+  width: 100%;
+}

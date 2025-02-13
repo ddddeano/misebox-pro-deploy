@@ -1,0 +1,16 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Ensure list items stretch to container width */
+    width: 100%;
+    max-width: 600px; /* Consistent with page max width */
+    gap: var(--spacing-xs); /* Add spacing between list items */
+  }
+  
+  .list-item {
+    width: 100%;
+    border-radius: var(--radius-s); /* Rounded corners */
+    box-shadow: var(--shadow-sm); /* Subtle shadow for depth */
+    background-color: var(--background); /* Matches the page background */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }

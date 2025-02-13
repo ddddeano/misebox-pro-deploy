@@ -1,0 +1,30 @@
+# Nuxt dev/build outputs
+.nuxt/
+.nitro/
+.out/
+.cache/
+dist/
+
+# Node dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Misc
+.DS_Store
+.fleet/
+.idea/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+config  # Ignore the config folder
+# Firebase configuration
+.firebase/
+
+# IDE settings
+.vscode/
+config/service-account.json

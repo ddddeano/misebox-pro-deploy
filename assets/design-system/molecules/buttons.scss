@@ -1,0 +1,135 @@
+/* === assets/design-system/molecules/buttons.scss === */
+
+/* General Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xs) var(--spacing-m);
+  border: 1px solid var(--text-secondary);
+  border-radius: var(--radius-s);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  background-color: var(--background);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    background-color: var(--primary-dark);
+  }
+
+  &:disabled {
+    background-color: var(--background-strong);
+    color: var(--text-secondary);
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+/* Icon Button */
+.icon-btn {
+  @extend .btn;
+  gap: var(--spacing-xs);
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--primary);
+
+  &:hover {
+    background-color: var(--primary-dark);
+  }
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: var(--secondary);
+  color: var(--text);
+
+  &:hover {
+    background-color: var(--secondary-dark);
+  }
+}
+
+/* Outline Button */
+.btn-outline {
+  @extend .btn;
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+
+  &:hover {
+    background-color: var(--primary);
+    color: var(--text-inverse);
+  }
+}
+
+
+/* Toggle Button */
+.btn-toggle {
+  @extend .btn;
+  width: 40px;
+  height: 40px;
+  background-color: var(--background-2);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+
+  &.active {
+    background-color: var(--primary);
+    color: var(--text-inverse);
+  }
+}
+
+/* Full-Width Button */
+.btn-full {
+  @extend .btn;
+  width: 100%;
+}
+
+/* Button Shadow */
+.btn-shadow {
+  @extend .btn;
+  box-shadow: var(--shadow-xs);
+
+  &:hover {
+    box-shadow: var(--shadow-m);
+  }
+}
+
+/* Rounded Button */
+.btn-rounded {
+  @extend .btn;
+  border-radius: 50%;
+  padding: var(--spacing-s);
+}
+
+/* Small Button */
+.btn-small {
+  @extend .btn;
+  font-size: var(--font-size-s);
+  padding: var(--spacing-xxs) var(--spacing-s);
+}
+
+/* Large Button */
+.btn-large {
+  @extend .btn;
+  font-size: var(--font-size-l);
+  padding: var(--spacing-m) var(--spacing-xl);
+}
+
+/* Underline Button */
+.btn-underline {
+  @extend .btn;
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-weight: bold;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,38 @@
+/* === assets/design-system/elements/molecules.scss === */
+
+/* Section Alignment */
+section {
+  align-items: flex-start;
+}
+
+label {
+  color: var(--text-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-m);
+}
+
+.display-name {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-m);
+  color: var(--text-primary);
+}
+
+.handle {
+  font-size: var(--font-size-s);
+  color: var(--text-secondary);
+}
+
+.icon-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-m);
+  padding: var(--spacing-m);
+}
+
+.access-denied-message {
+  color: var(--error-color);
+  font-size: var(--font-size-m);
+  text-align: center;
+  margin: var(--spacing-m) 0;
+}

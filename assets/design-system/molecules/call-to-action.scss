@@ -1,0 +1,38 @@
+/* === assets/design-system/organisms/call-to-action.scss === */
+
+/* Container Styles */
+// .call-to-action {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   width: 100%;
+//   gap: var(--spacing-l);
+//   padding: var(--spacing-l);
+// }
+
+/* Message Box Styles */
+.call-to-action-message {
+  width: 100%;
+  max-width: 800px;
+  padding: var(--spacing-m);
+  background: var(--background-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-m);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--spacing-l);
+  gap: var(--spacing-s);
+
+}
+.call-to-action-message p {
+  font-style: italic;
+}
+/* Heading Styles */
+.call-to-action-message h2 {
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+}

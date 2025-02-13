@@ -1,0 +1,39 @@
+/* === assets/design-system/molecules/tab-bar.scss === */
+
+/* Tab Bar Container */
+.tab-bar {
+    display: flex;
+    justify-content: space-around;
+    gap: var(--spacing-s);
+    padding: var(--spacing-s);
+  }
+  
+  /* Tab Button */
+  .btn-tab {
+    background-color: var(--background-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-s);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: var(--spacing-xs) var(--spacing-m);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  
+    &.active {
+      background-color: var(--primary);
+      color: var(--text-inverse);
+    }
+  
+    &:hover {
+      background-color: var(--primary-hover);
+    }
+  
+    &:disabled {
+      background-color: var(--background-strong);
+      color: var(--text-secondary);
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  }
+  

@@ -1,0 +1,36 @@
+{
+  "name": "misebox",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build --preset=firebase",
+    "dev": "npx nuxt dev --host",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "deploy": "firebase deploy"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^2.2.0",
+    "@internationalized/date": "^3.7.0",
+    "@nuxt/ui": "^3.0.0-alpha.12",
+    "@vueuse/core": "^12.5.0",
+    "firebase": "^10.13.1",
+    "firebase-admin": "^13.0.2",
+    "firebase-functions": "^6.2.0",
+    "nuxt": "^3.15.2",
+    "nuxt-stripe-module": "^3.2.0",
+    "nuxt-vuefire": "^1.0.5",
+    "qrcode": "^1.5.4",
+    "stripe": "^17.6.0",
+    "vue": "latest",
+    "vue-router": "latest",
+    "vue3-country-region-select": "^1.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^13.29.2",
+    "postcss": "^8.5.1",
+    "prettier": "^3.4.2",
+    "sass": "^1.83.4"
+  }
+}

@@ -1,0 +1,79 @@
+/* assets/styles/card.scss */
+
+/* Base Card Styles */
+.card {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  box-shadow: var(--shadow-xs);
+  background-color: var(--background-strong);
+  padding: var(--spacing-s);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+
+.card:hover {
+  background-color: var(--background-2);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Main content container for clickable area inside cards */
+.card-main {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  gap: var(--spacing-s);
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Content container */
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Title styling */
+.card-title,
+.display-name {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+}
+
+/* Subtitle styling */
+.card-subtitle,
+.handle {
+  font-size: var(--font-size-s);
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+/* Follow button container (if needed) */
+.interaction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-s);
+}
+
+/* Image wrapper for handling avatars in cards */
+.card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-s);
+  margin-top: auto;
+}

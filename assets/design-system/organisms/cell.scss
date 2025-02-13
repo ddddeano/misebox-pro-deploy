@@ -1,0 +1,96 @@
+.cell {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  box-shadow: var(--shadow-xs);
+  background-color: var(--background);
+  padding: var(--spacing-xxs);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.cell:hover {
+  background-color: var(--background-2);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Main content container for the clickable area */
+.cell-main {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  gap: var(--spacing-s);
+  width: 100%;
+}
+
+/* Image wrapper for handling avatars */
+
+/* Primary avatar */
+.primary-avatar {
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Secondary avatar overlaps the primary */
+.secondary-avatar {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  z-index: 2;
+}
+
+/* Content container */
+.cell-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Title styles */
+.cell-title {
+  font-weight: bold;
+  font-size: var(--font-size-m);
+  color: var(--text-primary);
+}
+
+/* Subtitle styles */
+.cell-subtitle {
+  font-size: var(--font-size-s);
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+/* Display name styling */
+.display-name {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+}
+
+/* Handle styling */
+.handle {
+  font-size: var(--font-size-s);
+  color: var(--text-secondary);
+}
+
+/* Follow button container */
+.interaction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-s);
+}

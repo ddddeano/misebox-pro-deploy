@@ -1,0 +1,30 @@
+/* ============================= */
+/* 🔹 main.scss - Global Styles  */
+/* ============================= */
+
+/* === Atoms === */
+@use './atoms/atoms';
+
+/* === Molecules === */
+@use './molecules/buttons';
+@use './molecules/call-to-action';
+@use './molecules/create';
+@use './molecules/dropdown';
+@use './molecules/editable-input';
+@use './molecules/gallery';
+@use './molecules/image';
+@use './molecules/list';
+@use './molecules/tab-bar';
+@use './molecules/uploads'; /* ✅ NEW */
+
+
+/* === Organisms === */
+@use './organisms/card';
+@use './organisms/cell';
+@use './organisms/kitchen';
+@use './organisms/page';
+@use './organisms/profile';
+
+/* === Utilities === */
+@use './utilities/base';
+@use './utilities/variables';

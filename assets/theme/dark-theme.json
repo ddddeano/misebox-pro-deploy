@@ -1,0 +1,60 @@
+{
+  "Theme": {
+    "Primary": {
+      "value": "{Purple.600}",
+      "type": "color"
+    },
+    "Secondary": {
+      "value": "{Purple.700}",
+      "type": "color"
+    },
+    "Tertiary": {
+      "value": "{Purple.800}",
+      "type": "color"
+    },
+    "Background": {
+      "value": "{Purple.900}",
+      "type": "color"
+    },
+    "Background-2": {
+      "value": "{Purple.800}",
+      "type": "color"
+    },
+    "Background-Strong": {
+      "value": "{Purple.950}",
+      "type": "color"
+    },
+    "Text-Primary": {
+      "value": "{Purple.100}",
+      "type": "color"
+    },
+    "Text-Secondary": {
+      "value": "{Purple.300}",
+      "type": "color"
+    },
+    "Border": {
+      "value": "{Purple.700}",
+      "type": "color"
+    },
+    "Hover": {
+      "value": "{Purple.950}",
+      "type": "color"
+    },
+    "Grey": {
+      "value": "{Greyscale.600}",
+      "type": "color"
+    },
+    "Warning": {
+      "value": "{Yellow.600}",
+      "type": "color"
+    },
+    "Success": {
+      "value": "{Green.600}",
+      "type": "color"
+    },
+    "Error": {
+      "value": "{Red.600}",
+      "type": "color"
+    }
+  }
+}

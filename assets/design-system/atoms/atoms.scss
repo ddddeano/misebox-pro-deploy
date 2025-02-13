@@ -1,0 +1,56 @@
+/* === assets/design-system/elements/atoms.scss === */
+
+/* Icon Styles */
+.icon {
+  cursor: pointer;
+  color: var(--text-primary);
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+/* Icon Animation */
+.icon.clicked {
+  transform: scale(1.3); /* Pulse effect when clicked */
+}
+
+.icon:hover {
+  color: var(--hover); /* Color change on hover */
+  transform: scale(1.1); /* Subtle zoom on hover */
+}
+
+/* Medium and Large Icon Sizes */
+.icon--medium {
+  width: 28px;
+  height: 28px;
+}
+
+.icon--large {
+  width: 32px;
+  height: 32px;
+}
+
+/* Text and Links */
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+/* Error Messages */
+.error-message {
+  color: var(--error);
+  font-size: var(--font-size-s);
+  margin-top: var(--spacing-xs);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  text-align: center;
+  margin: 0;
+}

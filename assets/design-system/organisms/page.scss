@@ -1,0 +1,58 @@
+/* === assets/design-system/organisms/page.scss === */
+
+.page {
+    width: 100%; /* Take full width of the container */
+    max-width: 600px; /* Limit the maximum width for readability */
+    margin-top: 0.5rem; /* Center the page horizontally */
+    padding: var(--spacing-l) var(--spacing-m); /* Add consistent padding */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    display: flex; /* Enable flexible layouts */
+    flex-direction: column; /* Default to stacking content vertically */
+    gap: var(--spacing-s); /* Add spacing between sections */
+    border-radius: var(--radius-s); /* Add slight rounding for polished look */
+  }
+  
+  /* Section Content Wrapper */
+ /* === assets/design-system/organisms/page.scss === */
+
+/* Section Content Wrapper */
+.page-content {
+  flex: 1; /* Allow content to expand and take up available space */
+  display: flex;
+  flex-direction: column; /* Stack inner content vertically */
+  gap: var(--spacing-s); /* Add spacing between content items */
+  align-items: stretch; /* Ensure children stretch to fill width */
+  width: 100%; /* Ensure content takes up full width */
+  max-width: 100%; /* Prevent accidental overflow */
+  box-sizing: border-box; /* Include padding and borders in size calculations */
+}
+
+  
+  /* Header Section */
+  .page-header {
+    margin-bottom: var(--spacing-m); /* Space between header and content */
+    text-align: center; /* Center align header content */
+    color: var(--text-primary); /* Ensure text matches theme */
+  }
+  
+  /* Footer Section */
+  .page-footer {
+    margin-top: var(--spacing-m); /* Space between footer and content */
+    text-align: center; /* Center align footer content */
+    color: var(--text-secondary); /* Muted text for footer */
+    font-size: var(--font-size-s); /* Smaller font for footer text */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .page {
+      padding: var(--spacing-xxs); /* Reduce padding for smaller screens */
+      gap: var(--spacing-m); /* Adjust gap for compact layout */
+    }
+  
+    .page-header,
+    .page-footer {
+      font-size: var(--font-size-m); /* Adjust text size for smaller screens */
+    }
+  }
+  
